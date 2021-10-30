@@ -6,6 +6,9 @@ COPY package.json ./
 
 RUN npm install
 
+RUN npm uninstall bcrypt
+RUN npm i bcrypt
+
 COPY . .
 
 EXPOSE 3333

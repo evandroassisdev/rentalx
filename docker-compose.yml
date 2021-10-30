@@ -26,6 +26,7 @@ services:
       - database
     volumes:
       - .:/usr/app
+      - /usr/src/app/node_modules
 
 volumes:
   pgdata:
